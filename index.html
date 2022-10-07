@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator CSS</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="contain">
+            <div class="display">
+                <!--Code injected JS--->
+            </div>
+        </div>
+        <div class="input-contain">
+            <div class="inputs input1">
+                <p>Size</p>
+                <input type="range" class="size" min="0" max="400" value="0">
+            </div>
+            <div class="inputs input2">
+                <p>Border</p>
+                <input type="range" class="border" min="0" max="50" value="0">
+                <p>Color Border</p>
+                <input type="color" class="color-border" value="#ff9500">
+            </div>
+            <div class="inputs input3">
+                <p>Border-radious</p>
+                <input type="range" class="borderRadious" min="0" max="200" value="0">
+            </div>
+            <div class="inputs input4">
+                <p>blur</p>
+                <input type="range" class="blur" min="0" max="100" value="0">
+            </div>
+            <div class="center">
+                <h2>Box shadow</h2>
+            </div>
+            <div class="inputs input5">
+                <p>Desplazamiento-x</p>
+                <input type="range" class="slices" id="slice-x" min="-100" max="100">
+            </div>
+            <div class="inputs input6">
+                <p>Desplazamiento-y</p>
+                <input type="range" class="slices" id="slice-y" min="-100" max="100">
+            </div>
+            <div class="inputs input7">
+                <p>Blur radius</p>
+                <input type="range" class="slices" id="blur-radius">
+            </div>
+            <div class="inputs input8">
+                <p>Spread radius</p>
+                <input type="range" class="slices" id="spread-radius">
+            </div>
+            <div class="inputs input9">
+                <p>Color box-shadow</p>
+                <input type="color" class="colorBoxShadow" value="#0015b3"/>
+            </div>
+            <div class="btn">
+                <button>Open</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <p class="close">X</p>
+        <div class="properties">
+            <div class="size"></div>
+            <div class="border"></div>
+            <div class="borderRadius"></div>
+            <div class="blur"></div>
+            <div class="boxShadow"></div>
+            <!--Inject HTML since JS-->
+        </div>
+    </div>
+    <div class="modal-bg"></div>
+</body>
+<script src="assets/js/app.js"></script>
+</html>
