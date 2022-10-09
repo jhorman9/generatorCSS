@@ -156,6 +156,6 @@ body{
 
 @media(max-width: 700px){
     .modal-bg{
-        height: 200vh;
+        height: 250vh;
     }
 }
