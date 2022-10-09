@@ -51,7 +51,6 @@ blurRange.addEventListener("input", (event) =>{
 })
 
 const slices = document.querySelectorAll(".slices");
-
 slices.forEach((slice) =>{
     //recorrer todo el slices que contiene varios elementos del tag input que pertenece al boxShadow//
     slice.addEventListener("input", resultInput);
@@ -65,5 +64,5 @@ function resultInput() {
     const valuesBlurRadius = blurRadius.value;
     const valuesSpreadRadius = spreadRadius.value;
     display.style.boxShadow = `${valuesSliceX}px ${valuesSliceY}px ${valuesBlurRadius}px ${valuesSpreadRadius}px ${colorBoxShadow.value}`;
-    display.parentElement.parentElement.nextElementSibling.children[1].children[4].textContent = `${valuesSliceX}px ${valuesSliceY}px ${valuesBlurRadius}px ${valuesSpreadRadius}px ${colorBoxShadow.value};`;
+    display.parentElement.parentElement.nextElementSibling.children[1].children[4].textContent = `box-shadow: ${valuesSliceX}px ${valuesSliceY}px ${valuesBlurRadius}px ${valuesSpreadRadius}px ${colorBoxShadow.value};`;
 }

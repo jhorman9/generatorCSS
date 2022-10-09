@@ -104,6 +104,12 @@ body{
     z-index: 4;
 }
 
+@media(max-width: 700px) {
+    .modal{
+        width: 100%;
+    }
+}
+
 .modal p{
     text-align: end;
     padding: 5px;
@@ -149,5 +155,7 @@ body{
 }
 
 @media(max-width: 700px){
-
+    .modal-bg{
+        height: 200vh;
+    }
 }
