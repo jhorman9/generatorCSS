@@ -88,7 +88,8 @@ body{
 .modal{
     width: 400px;
     height: 400px;
-    background-color: white;
+    background: rgb(0,42,255);
+    background: radial-gradient(circle, rgba(0,42,255,1) 44%, rgba(255,0,0,1) 98%);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -111,14 +112,20 @@ body{
 }
 
 .modal p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    color: black;
+    font-size: 20px;
     text-align: end;
-    padding: 5px;
+    width: 50px;
+    height: 50px;
     margin: 15px;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blue;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -130,7 +137,7 @@ body{
 .modal .properties{
     width: 75%;
     height: 60%;
-    background-color: blue;
+    background: rgb(1,26,92);
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -156,6 +163,6 @@ body{
 
 @media(max-width: 700px){
     .modal-bg{
-        height: 250vh;
+        height: 275vh;
     }
 }
